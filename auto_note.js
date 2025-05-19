@@ -18,10 +18,10 @@ var ScriptData={name:"AutoNote Plus",version:"1.1",lastUpdate:"2025-05-19",autho
         unknown:"Unbekannt",verifyReportPage:"Dieses Skript kann nur auf einer Berichtsseite ausgeführt werden.",offensive:"Offensiv",defensive:"Defensiv",
         probOffensive:"Wahrscheinlich Offensiv",probDefensive:"Wahrscheinlich Defensiv",noSurvivors:"Keine Truppen haben überlebt",watchtower:"Wachturm",wall:"Mauer",
         firstChurch:"Erste Kirche",church:"Kirche",defensiveNukes:"Verteidigungs-Nukes",noteCreated:"Notiz erstellt!",addReportTo:"Bericht hinzufügen zu welchem Dorf?",
-        atacante:"Angreifer",defensor:"Verteidiger"},sk_SK:{unknown:"Neznámy",verifyReportPage:"Tento skript je možné spusti iba na obrazovke správy.",offensive:"Ofenzívny",
-        defensive:"Defenzívny",probOffensive:"Pravdepodobne ofenzívny",probDefensive:"Pravdepodobne defenzívny",noSurvivors:"Žiadne jednotky neprežili",
-        watchtower:"Strážna veža", wall:"Hradba", firstChurch:"Hlavný kostol", church:"Kostol", defensiveNukes:"Defenzívne fullky", noteCreated:"Poznámka vytvorená!",
-        addReportTo:"Prida správu do ktorej dediny?",atacante:"Útoèník",defensor:"Obhajca"}
+        atacante:"Angreifer",defensor:"Verteidiger"},sk_SK:{unknown:"Neznamy",verifyReportPage:"Tento skript je mozne spustit iba na obrazovke s oznamenim.",offensive:"OFF",
+        defensive:"DEFF",probOffensive:"Pravdepodobne OFF",probDefensive:"Pravdepodobne DEFF",noSurvivors:"Ziadne jednotky neprezili",
+        watchtower:"Strazna veza", wall:"Hradba", firstChurch:"Hlavny kostol", church:"Kostol", defensiveNukes:"Defenzivne fullky", noteCreated:"Poznamka vytvorena!",
+        addReportTo:"Na ktorú dedinu pridat oznamenie?",atacante:"Utocnik",defensor:"Obranca"}
 },_t=a=>null!=translations[game_data.locale]?translations[game_data.locale][a]:translations.pt_PT[a],initTranslations=()=>localStorage.getItem(`${LS_prefix}_langWarning`)?1:(void 0===translations[game_data.locale]&&UI.ErrorMessage(`No translation found for <b>${game_data.locale}</b>.`,3000),
     localStorage.setItem(`${LS_prefix}_langWarning`,1),0)
 CreateReportNotes={data:{player:{playerName:game_data.player.name,playerIsAttacking:false,playerIsDefending:false,playerWantInfoAttacker:false,
