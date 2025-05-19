@@ -11,17 +11,17 @@ var ScriptData={name:"AutoNote Plus",version:"1.1",lastUpdate:"2025-05-19",autho
         atacante:"Attacker",defensor:"Defender"},ro_RO:{unknown:"Unknown",verifyReportPage:"This script can only be run on a report screen.",offensive:"Offensive",
         defensive:"Defensive",probOffensive:"Probably Offensive",probDefensive:"Probably Defensive",noSurvivors:"No troops survived",watchtower:"Watchtower",
         wall:"Wall",firstChurch:"First church",church:"Church",defensiveNukes:"Defensive Nukes",noteCreated:"Note created!",addReportTo:"Add report to which village?",
-        atacante:"Atacator",defensor:"ApÃ£rÃ£tor"},pl_PL:{unknown:"Nieznany",verifyReportPage:"Ten skrypt moA1na uruchomiÃ„â€¡ tylko na ekranie raportu.",
+        atacante:"Atacator",defensor:"Aparator"},pl_PL:{unknown:"Nieznany",verifyReportPage:"Ten skrypt moA1na uruchomiÄ‡ tylko na ekranie raportu.",
         offensive:"Ofensywna",defensive:"Defensywna",probOffensive:"Prawdopodobnie Ofensywna",probDefensive:"Prawdopodobnie Defensywna",
-        noSurvivors:"AÂ»adne wojska nie przeA1yAâ€šy",watchtower:"WieA1a straA1nicza",wall:"Mur",firstChurch:"Pierwszy koAâ€ºciA3Aâ€š",church:"KoAâ€ºciA3Aâ€š",
-        defensiveNukes:"bunkier",noteCreated:"Utworzono notatkÃ„!",addReportTo:"Dodaj raport do ktA3rej wioski?",atacante:"Napastnik",defensor:"ObroÃ±ca"},de_DE:{
-        unknown:"Unbekannt",verifyReportPage:"Dieses Skript kann nur auf einer Berichtsseite ausgefÃ¼hrt werden.",offensive:"Offensiv",defensive:"Defensiv",
-        probOffensive:"Wahrscheinlich Offensiv",probDefensive:"Wahrscheinlich Defensiv",noSurvivors:"Keine Truppen haben Ã¼berlebt",watchtower:"Wachturm",wall:"Mauer",
-        firstChurch:"Erste Kirche",church:"Kirche",defensiveNukes:"Verteidigungs-Nukes",noteCreated:"Notiz erstellt!",addReportTo:"Bericht hinzufÃ¼gen zu welchem Dorf?",
-        atacante:"Angreifer",defensor:"Verteidiger"},sk_SK:{unknown:"Neznamy",verifyReportPage:"Tento skript je mozne spustitÂ iba na obrazovke s oznamenim.",offensive:"OFF",
+        noSurvivors:"A»adne wojska nie przeA1yA‚y",watchtower:"WieA1a straA1nicza",wall:"Mur",firstChurch:"Pierwszy koA›ciA3A‚",church:"KoA›ciA3A‚",
+        defensiveNukes:"bunkier",noteCreated:"Utworzono notatkÄ!",addReportTo:"Dodaj raport do ktA3rej wioski?",atacante:"Napastnik",defensor:"Obronca"},de_DE:{
+        unknown:"Unbekannt",verifyReportPage:"Dieses Skript kann nur auf einer Berichtsseite ausgeführt werden.",offensive:"Offensiv",defensive:"Defensiv",
+        probOffensive:"Wahrscheinlich Offensiv",probDefensive:"Wahrscheinlich Defensiv",noSurvivors:"Keine Truppen haben überlebt",watchtower:"Wachturm",wall:"Mauer",
+        firstChurch:"Erste Kirche",church:"Kirche",defensiveNukes:"Verteidigungs-Nukes",noteCreated:"Notiz erstellt!",addReportTo:"Bericht hinzufügen zu welchem Dorf?",
+        atacante:"Angreifer",defensor:"Verteidiger"},sk_SK:{unknown:"Neznamy",verifyReportPage:"Tento skript je mozne spustit? iba na obrazovke s oznamenim.",offensive:"OFF",
         defensive:"DEFF",probOffensive:"Pravdepodobne OFF",probDefensive:"Pravdepodobne DEFF",noSurvivors:"Ziadne jednotky neprezili",
         watchtower:"Strazna veza", wall:"Hradba", firstChurch:"Hlavny kostol", church:"Kostol", defensiveNukes:"Defenzivne fullky", noteCreated:"Poznamka vytvorena!",
-        addReportTo:"Na ktorÃº dedinu pridat oznamenie?",atacante:"Utocnik",defensor:"Obranca"}
+        addReportTo:"Na ktorú dedinu pridat oznamenie?",atacante:"Utocnik",defensor:"Obranca"}
 },_t=a=>null!=translations[game_data.locale]?translations[game_data.locale][a]:translations.pt_PT[a],initTranslations=()=>localStorage.getItem(`${LS_prefix}_langWarning`)?1:(void 0===translations[game_data.locale]&&UI.ErrorMessage(`No translation found for <b>${game_data.locale}</b>.`,3000),
     localStorage.setItem(`${LS_prefix}_langWarning`,1),0)
 CreateReportNotes={data:{player:{playerName:game_data.player.name,playerIsAttacking:false,playerIsDefending:false,playerWantInfoAttacker:false,
@@ -114,8 +114,8 @@ CreateReportNotes={data:{player:{playerName:game_data.player.name,playerIsAttack
         this.checkPage()&&(this.initScriptData(),this.getVillageType(),this.writeNote())}},initTranslations()?CreateReportNotes.start():setTimeout((()=>{
     CreateReportNotes.start()}),3000)
 
-// AutoNote Plus â€“ UpravenÃ¡ verzia
-// PÃ´vodnÃ½ skript: Swiftblade, xdam98, AnGeLL
-// Ãšprava: PridanÃ¡ podpora slovenskÃ©ho jazyka (sk_SK)
-// DÃ¡tum Ãºpravy: 2025-05-19
+// AutoNote Plus – Upravená verzia
+// Pôvodný skript: Swiftblade, xdam98, AnGeLL
+// Úprava: Pridaná podpora slovenského jazyka (sk_SK)
+// Dátum úpravy: 2025-05-19
 
